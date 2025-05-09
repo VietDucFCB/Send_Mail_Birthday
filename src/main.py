@@ -50,6 +50,6 @@ def main():
 
 if __name__ == "__main__":
     # If you want to run the scheduler directly:
-    main()
+    # main()
     # If you want to run the task once immediately (e.g., for testing or via CLI):
-    # main_cli()
+    main_cli()
