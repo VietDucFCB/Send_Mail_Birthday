@@ -28,8 +28,8 @@ jobs:
         env:
           SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }} # Changed from SENDER_EMAIL
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SENDER_EMAIL: ${{ secrets.SMTP_USERNAME }} # Changed from SMTP_USERNAME to SENDER_EMAIL
+          SENDER_PASSWORD: ${{ secrets.SMTP_PASSWORD }} # Changed from SMTP_PASSWORD to SENDER_PASSWORD
           # DATABASE_PATH, EMAIL_SUBJECT, EMAIL_TEMPLATE_PATH will use defaults from config.py
           # or you can add them as secrets if they need to be different in Actions
         run: python src/main.py
